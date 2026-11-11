@@ -49,22 +49,27 @@ details ul{margin:0;padding:10px 14px 12px 32px}details li{margin:4px 0}
 .todo span{background:linear-gradient(var(--ink),var(--ink)) no-repeat 0 55%/0 2px;transition:background-size .35s,color .35s}
 .todo input:checked+span{background-size:100% 2px;color:#8a8583}
 footer{text-align:center;font-size:12px;opacity:.7;padding:6px}
+.sun{transform-box:fill-box;transform-origin:center;animation:sp 14s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}.walk{animation:wk 18s linear infinite}@keyframes wk{from{transform:translateX(-150px)}to{transform:translateX(190px)}}.bob{animation:bob .6s ease-in-out infinite alternate}@keyframes bob{to{transform:translateY(-2px)}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style></head><body>
 <nav id="nav"></nav>
 <main>
 <section id="home">
-<div class="box hero"><svg viewBox="0 0 320 200" role="img" aria-label="北京插圖：天壇、長城、烤鴨" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
-<circle cx="268" cy="38" r="20" fill="#F6D27A"/>
-<path d="M0 150Q40 92 92 128T150 140V200H0Z" fill="#B9DAA5"/>
-<path d="M0 128L30 112 62 122" fill="none"/><rect x="12" y="98" width="22" height="22" rx="3" fill="#fff"/><path d="M10 98h26M16 98v-6h5v6M26 98v-6h5v6" fill="none"/>
-<rect x="96" y="158" width="128" height="16" rx="5" fill="#fff"/><rect x="108" y="142" width="104" height="16" rx="5" fill="#fff"/>
-<rect x="136" y="102" width="48" height="40" rx="4" fill="#F2A497"/><path d="M160 102v40M148 102v40M172 102v40" fill="none" stroke-width="2"/>
-<path d="M118 106H202L190 88H130Z" fill="#A8D3E6"/><path d="M130 88H190L178 70H142Z" fill="#A8D3E6"/><path d="M142 70H178L168 54H152Z" fill="#A8D3E6"/><circle cx="160" cy="46" r="7" fill="#F6D27A"/>
-<path d="M0 174H320V200H0Z" fill="#fff"/><path d="M0 174H320" fill="none"/>
-<g><ellipse cx="262" cy="150" rx="34" ry="20" fill="#F2A497"/><circle cx="294" cy="130" r="11" fill="#F2A497"/><path d="M303 128l12 4-12 4Z" fill="#F6D27A"/><circle cx="296" cy="127" r="2" fill="#3E3A39"/><path d="M246 140q16-8 32 0" fill="none" stroke-width="2"/><path d="M290 140q-6 8-8 12" fill="none"/></g>
-<g transform="translate(40 150)"><path d="M0 0V28" fill="none"/><circle cx="0" cy="-6" r="6" fill="#F2A497"/><circle cx="0" cy="-18" r="6" fill="#F2A497"/><circle cx="0" cy="-30" r="6" fill="#F2A497"/></g>
-</svg></div>
+<div class="box hero"><svg viewBox="0 0 320 224" role="img" aria-label="故宮插圖：太和殿、轉動的太陽、一男一女穿古裝行過" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g transform="translate(272 40)"><g class="sun"><circle r="14" fill="#F6D27A"/><path d="M0-24V-19M0 19V24M-24 0H-19M19 0H24M-17-17l3 3M14 14l3 3M17-17l-3 3M-14 14l-3 3" fill="none"/></g></g>
+<path d="M30 52h40a9 9 0 0 0 0-18 12 12 0 0 0-22-3 9 9 0 0 0-18 21Z" fill="#fff" stroke-width="2.5"/><path d="M200 36h34a8 8 0 0 0 0-16 10 10 0 0 0-19-2 8 8 0 0 0-15 18Z" fill="#fff" stroke-width="2.5"/>
+<rect x="0" y="150" width="320" height="34" fill="#F2A497"/><rect x="0" y="144" width="320" height="8" fill="#F6D27A"/><path d="M0 164H320" fill="none" stroke-width="2"/>
+<rect x="28" y="124" width="30" height="28" fill="#F2A497"/><path d="M20 126Q32 128 36 114H50Q54 128 66 126L58 134H28Z" fill="#F6D27A"/><rect x="262" y="124" width="30" height="28" fill="#F2A497"/><path d="M254 126Q266 128 270 114H284Q288 128 300 126L292 134H262Z" fill="#F6D27A"/>
+<rect x="78" y="170" width="164" height="12" rx="3" fill="#fff"/><rect x="90" y="160" width="140" height="10" rx="3" fill="#fff"/>
+<rect x="104" y="124" width="112" height="36" fill="#F2A497"/><path d="M122 124v36M140 124v36M180 124v36M198 124v36" fill="none" stroke-width="2"/><rect x="150" y="134" width="20" height="26" rx="3" fill="#F6D27A"/>
+<path d="M80 126Q98 128 106 110H214Q222 128 240 126L226 134H94Z" fill="#F6D27A"/>
+<rect x="126" y="92" width="68" height="18" fill="#F2A497"/><path d="M144 92v18M176 92v18" fill="none" stroke-width="2"/>
+<path d="M108 94Q126 96 134 78H186Q194 96 212 94L198 102H122Z" fill="#F6D27A"/><rect x="152" y="66" width="16" height="12" rx="4" fill="#F6D27A"/><path d="M160 66v-8" fill="none"/>
+<rect x="0" y="184" width="320" height="40" fill="#FFFCF6" stroke="none"/><path d="M0 184H320" fill="none"/><path d="M30 200h50M120 200h60M230 200h50M70 214h60M190 214h60" fill="none" stroke-width="2" opacity=".35"/>
+<g class="walk" stroke-width="2">
+<g transform="translate(100 218)"><g class="bob"><path d="M-9-29L9-29L12-5H-12Z" fill="#A8D3E6"/><path d="M-9-28L-17-15L-10-13L-8-22M9-28L17-15L10-13L8-22" fill="#A8D3E6"/><rect x="-9" y="-19" width="18" height="4" fill="#F6D27A"/><path d="M-3-29L0-23L3-29" fill="#fff"/><circle cy="-36" r="6.5" fill="#FFF0DD"/><path d="M-6.5-37Q0-46 6.5-37Z" fill="#3E3A39"/><circle cy="-45" r="3.5" fill="#3E3A39"/><circle cx="2.5" cy="-36" r="1" fill="#3E3A39" stroke="none"/><path d="M-6-5v5M6-5v5" fill="none" stroke-width="3"/></g></g>
+<g transform="translate(138 218)"><g class="bob"><path d="M-8-29L8-29L9-21H-9Z" fill="#F2A497"/><path d="M-8-28L-16-16L-10-14L-8-22M8-28L16-16L10-14L8-22" fill="#F2A497"/><path d="M-9-22H9L15-4H-15Z" fill="#B9DAA5"/><rect x="-9" y="-24" width="18" height="3" fill="#F6D27A"/><path d="M0-21Q-2-12-5-8" fill="none" stroke-width="1.5"/><circle cy="-36" r="6.5" fill="#FFF0DD"/><path d="M-6.5-37Q0-46 6.5-37Z" fill="#3E3A39"/><circle cx="-6" cy="-41" r="3.5" fill="#3E3A39"/><circle cx="6" cy="-41" r="3.5" fill="#3E3A39"/><circle cx="2.5" cy="-36" r="1" fill="#3E3A39" stroke="none"/></g></g>
+</g></svg></div>
 <h1>半夜敲門也北京<br>8 天 7 夜</h1><span class="sub">2026.12.13 – 12.20</span>
 <div class="box cd" style="margin-top:14px">出發倒數<b id="cd">–</b></div>
 <div class="box"><h2>✈️ 航班</h2>
