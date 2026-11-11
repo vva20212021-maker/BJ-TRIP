@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="color-scheme" content="light"><title>半夜敲門也北京 8 天 7 夜</title>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#3E3A39;--bg:#FFFCF6;--c:#F2A497;--y:#F6D27A;--b:#A8D3E6;--g:#B9DAA5;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.6 "Huninn","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;background:var(--bg);border-bottom:3px solid var(--ink)}
+nav button{flex:1;min-width:0;padding:12px 2px 9px;font:700 13px "Huninn","Noto Sans TC",sans-serif;color:var(--ink);background:none;border:0;border-bottom:5px solid transparent;cursor:pointer}
+nav button.on{border-bottom-color:var(--c)}
+main{max-width:560px;margin:0 auto;padding:16px 14px 40px}
+section{display:none}section.on{display:block}
+.box{border:3px solid var(--ink);border-radius:20px;background:#fff;padding:14px;margin:0 0 14px;overflow:hidden}
+h1{text-align:center;font-size:28px;line-height:1.25;margin:6px 0 4px;font-weight:900}
+h2{font-size:19px;margin:4px 0 10px;font-weight:900}
+.sub{display:inline-block;background:var(--y);border:3px solid var(--ink);border-radius:999px;padding:1px 14px;font-weight:700}
+.hero{background:var(--b);text-align:center}
+.hero svg{width:100%;height:auto;display:block;animation:fl 4s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-5px)}}
+.cd{background:#fff;text-align:center;font-weight:700;font-size:17px}.cds{display:flex;gap:8px;justify-content:center;margin-top:10px}.cds div{flex:1;max-width:80px;border:3px solid var(--ink);border-radius:16px;padding:6px 0;font-size:13px;line-height:1.3}.cds b{display:block;font-size:28px;font-weight:400;font-variant-numeric:tabular-nums}
+.fl{display:flex;align-items:center;gap:8px;justify-content:space-between;margin:6px 0}
+.fl>div{flex:1;min-width:0}.fl big{font-size:20px;font-weight:900;display:block}
+.btn{display:inline-block;border:3px solid var(--ink);border-radius:14px;padding:6px 10px;font:700 13px "Huninn","Noto Sans TC",sans-serif;color:var(--ink);text-decoration:none;background:var(--g);text-align:center}
+.btn.t{background:var(--c)}
+.pills{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 12px;margin:0 -2px}
+.pills button{flex:none;border:3px solid var(--ink);border-radius:999px;background:#fff;padding:3px 14px;font:700 14px "Huninn","Noto Sans TC",sans-serif;color:var(--ink);cursor:pointer}
+.pills button.on{background:var(--c)}
+.dh{background:var(--g)}.dh small{display:block;font-weight:500}
+.tl{position:relative;padding-left:18px}.tl::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;border-left:3px dashed var(--ink)}
+.card{position:relative;animation:pop .45s cubic-bezier(.34,1.56,.64,1) both}
+.card::before{content:"";position:absolute;left:-18px;top:18px;width:11px;height:11px;border-radius:50%;background:var(--c);border:3px solid var(--ink)}
+@keyframes pop{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
+.tm{font-weight:900;font-size:14px}
+.tag{display:inline-block;border:2px solid var(--ink);border-radius:999px;padding:0 8px;font-size:12px;font-weight:700;margin:2px 4px 2px 0}
+.b{background:var(--b)}.g{background:var(--g)}.y{background:var(--y)}.c{background:var(--c)}
+.cost{display:inline-block;background:var(--y);border-radius:8px;padding:0 6px;font-size:12px;margin-top:2px}
+.pl{font-size:12px;opacity:.75}
+.acts{display:flex;gap:8px;margin-top:10px}.acts .btn{flex:1}
+.tip{background:var(--y)}
+.food{display:grid;gap:12px}
+.food h3{margin:0;font-size:16px}
+details{border:3px solid var(--ink);border-radius:18px;background:#fff;margin-bottom:12px;overflow:hidden}
+summary{padding:12px 14px;font-weight:900;cursor:pointer;background:var(--b)}
+details ul{margin:0;padding:10px 14px 12px 32px}details li{margin:4px 0}
+.todo{display:flex;gap:10px;align-items:center;padding:10px 12px;border:3px solid var(--ink);border-radius:16px;background:#fff;margin-bottom:10px;cursor:pointer}
+.todo input{appearance:none;flex:none;width:26px;height:26px;border:3px solid var(--ink);border-radius:8px;background:#fff;margin:0;cursor:pointer;display:grid;place-items:center}
+.todo input:checked{background:var(--g)}.todo input:checked::after{content:"✓";font-weight:900}
+.todo span{background:linear-gradient(var(--ink),var(--ink)) no-repeat 0 55%/0 2px;transition:background-size .35s,color .35s}
+.todo input:checked+span{background-size:100% 2px;color:#8a8583}
+footer{text-align:center;font-size:12px;opacity:.7;padding:6px}
+.sun{transform-box:fill-box;transform-origin:center;animation:sp 14s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}.walk{animation:wk 18s linear infinite}@keyframes wk{from{transform:translateX(-150px)}to{transform:translateX(190px)}}.bob{animation:bob .6s ease-in-out infinite alternate}@keyframes bob{to{transform:translateY(-2px)}}
+.fcard{border:3px solid var(--ink);border-radius:22px;background:#fff;padding:14px;margin:0 0 14px;box-shadow:3px 3px 0 rgba(62,58,57,.15)}.fh{display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px;font-size:13px}.fh .tag{font-size:14px;padding:1px 10px;margin:0}.fh .fa{margin-left:auto;font-weight:700}.fr{display:flex;align-items:center;gap:6px;margin:14px 0 12px}.fe{flex:none;display:flex;flex-direction:column;font-size:14px}.fe.r{text-align:right}.ft{font:700 27px/1.2 "Courier New",ui-monospace,monospace;letter-spacing:-.5px}.fm{flex:1;min-width:0;text-align:center;font-size:12px}.fm i{display:flex;align-items:center;gap:4px;font-style:normal;margin:2px 0}.fm i span{flex:1;border-top:3px solid var(--ink)}.fm em{font-style:normal;font-weight:700}.k1{color:#E0705E}.k2{color:#5FA4C4}.ff{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px 10px;border-top:2px solid #E9E3DA;padding-top:10px;font-size:12.5px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head><body>
+<nav id="nav"></nav>
+<main>
+<section id="home">
+<div class="box hero"><svg viewBox="0 0 320 224" role="img" aria-label="故宮插圖：太和殿、轉動的太陽、一男一女穿古裝行過" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g transform="translate(272 40)"><g class="sun"><circle r="14" fill="#F6D27A"/><path d="M0-24V-19M0 19V24M-24 0H-19M19 0H24M-17-17l3 3M14 14l3 3M17-17l-3 3M-14 14l-3 3" fill="none"/></g></g>
+<path d="M30 52h40a9 9 0 0 0 0-18 12 12 0 0 0-22-3 9 9 0 0 0-18 21Z" fill="#fff" stroke-width="2.5"/><path d="M200 36h34a8 8 0 0 0 0-16 10 10 0 0 0-19-2 8 8 0 0 0-15 18Z" fill="#fff" stroke-width="2.5"/>
+<rect x="0" y="150" width="320" height="34" fill="#F2A497"/><rect x="0" y="144" width="320" height="8" fill="#F6D27A"/><path d="M0 164H320" fill="none" stroke-width="2"/>
+<rect x="28" y="124" width="30" height="28" fill="#F2A497"/><path d="M20 126Q32 128 36 114H50Q54 128 66 126L58 134H28Z" fill="#F6D27A"/><rect x="262" y="124" width="30" height="28" fill="#F2A497"/><path d="M254 126Q266 128 270 114H284Q288 128 300 126L292 134H262Z" fill="#F6D27A"/>
+<rect x="78" y="170" width="164" height="12" rx="3" fill="#fff"/><rect x="90" y="160" width="140" height="10" rx="3" fill="#fff"/>
+<rect x="104" y="124" width="112" height="36" fill="#F2A497"/><path d="M122 124v36M140 124v36M180 124v36M198 124v36" fill="none" stroke-width="2"/><rect x="150" y="134" width="20" height="26" rx="3" fill="#F6D27A"/>
+<path d="M80 126Q98 128 106 110H214Q222 128 240 126L226 134H94Z" fill="#F6D27A"/>
+<rect x="126" y="92" width="68" height="18" fill="#F2A497"/><path d="M144 92v18M176 92v18" fill="none" stroke-width="2"/>
+<path d="M108 94Q126 96 134 78H186Q194 96 212 94L198 102H122Z" fill="#F6D27A"/><rect x="152" y="66" width="16" height="12" rx="4" fill="#F6D27A"/><path d="M160 66v-8" fill="none"/>
+<rect x="0" y="184" width="320" height="40" fill="#FFFCF6" stroke="none"/><path d="M0 184H320" fill="none"/><path d="M30 200h50M120 200h60M230 200h50M70 214h60M190 214h60" fill="none" stroke-width="2" opacity=".35"/>
+<g class="walk" stroke-width="2">
+<g transform="translate(100 218)"><g class="bob"><path d="M-9-29L9-29L12-5H-12Z" fill="#A8D3E6"/><path d="M-9-28L-17-15L-10-13L-8-22M9-28L17-15L10-13L8-22" fill="#A8D3E6"/><rect x="-9" y="-19" width="18" height="4" fill="#F6D27A"/><path d="M-3-29L0-23L3-29" fill="#fff"/><circle cy="-36" r="6.5" fill="#FFF0DD"/><path d="M-6.5-37Q0-46 6.5-37Z" fill="#3E3A39"/><circle cy="-45" r="3.5" fill="#3E3A39"/><circle cx="2.5" cy="-36" r="1" fill="#3E3A39" stroke="none"/><path d="M-6-5v5M6-5v5" fill="none" stroke-width="3"/></g></g>
+<g transform="translate(138 218)"><g class="bob"><path d="M-8-29L8-29L9-21H-9Z" fill="#F2A497"/><path d="M-8-28L-16-16L-10-14L-8-22M8-28L16-16L10-14L8-22" fill="#F2A497"/><path d="M-9-22H9L15-4H-15Z" fill="#B9DAA5"/><rect x="-9" y="-24" width="18" height="3" fill="#F6D27A"/><path d="M0-21Q-2-12-5-8" fill="none" stroke-width="1.5"/><circle cy="-36" r="6.5" fill="#FFF0DD"/><path d="M-6.5-37Q0-46 6.5-37Z" fill="#3E3A39"/><circle cx="-6" cy="-41" r="3.5" fill="#3E3A39"/><circle cx="6" cy="-41" r="3.5" fill="#3E3A39"/><circle cx="2.5" cy="-36" r="1" fill="#3E3A39" stroke="none"/></g></g>
+</g></svg></div>
+<h1>半夜敲門也北京<br>8 天 7 夜</h1><div style="text-align:center"><span class="sub">2026.12.13 – 12.20</span></div>
+<div class="box cd" style="margin-top:14px"><div>距離出發還有…</div><div class="cds" id="cd"></div></div>
+<div class="fcard"><div class="fh"><span class="tag c">去程</span><b>2026/12/13（日）</b><span class="fa">南方航空 CZ5010</span></div>
+<div class="fr"><div class="fe"><b class="ft">08:10</b><b>香港 HKG</b></div><div class="fm"><small>3 小時 15 分</small><i><span></span>✈️<span></span></i><em class="k1">直飛不中停</em></div><div class="fe r"><b class="ft">11:25</b><b>大興 PKX</b></div></div>
+<div class="ff"><span>🚕 抵達後打車直達酒店約 60 分鐘</span><span>時差：無</span></div></div>
+<div class="fcard"><div class="fh"><span class="tag b">回程</span><b>2026/12/20（日）</b><span class="fa">南方航空 CZ5009</span></div>
+<div class="fr"><div class="fe"><b class="ft">19:00</b><b>大興 PKX</b></div><div class="fm"><small>4 小時</small><i><span></span>✈️<span></span></i><em class="k2">直飛不中停</em></div><div class="fe r"><b class="ft">23:00</b><b>香港 HKG</b></div></div>
+<div class="ff"><span>⏰ 17:30 前抵達大興機場</span><span>時差：無</span></div></div>
+<div class="box"><h2>🏨 酒店</h2><b>懿庭臻舍酒店（北京天安門廣場店）</b><div class="acts"><a class="btn" id="hotel" target="_blank">📍 百度地圖定點</a></div></div>
+</section>
+<section id="days"><div class="pills" id="pills"></div><div id="dayv"></div></section>
+<section id="food"><h2>🍜 美食總表</h2><div class="food" id="foodv"></div></section>
+<section id="info"><h2>📋 實用資訊</h2><div id="infov"></div></section>
+<section id="todo"><h2>✅ 待辦清單</h2><div id="todov"></div></section>
+<footer>🍡 祝旅途愉快　坐標為約略位置，以 App 內店名搜尋為準</footer>
+</main>
+<script>
+const E=encodeURIComponent;
+const P={a:["大興機場 PKX",39.5098,116.4109],h:["懿庭臻舍酒店（天安門廣場店）",39.8994,116.3974],g:["中國國家博物館",39.904,116.4183],sj:["四季民福烤鴨（前門大柵欄店）",39.8933,116.389],qm:["前門大街",39.8966,116.3913],mt:["慕田峪長城",40.4319,116.5704],mk:["門框胡同百年滷煮（前門店）",39.8925,116.388],wm:["故宮午門",39.9127,116.4036],sw:["故宮神武門",39.9165,116.397],hy:["河沿肉餅",39.918,116.404],js:["景山公園",39.9241,116.3965],hp:["和平菓局（王府井百貨）",39.9094,116.4112],dd:["大董烤鴨（王府井店）",39.908,116.4105],ug:["北京環球度假區",39.8473,116.6833],sb:["三把掃帚（環球影城內）",39.8465,116.682],tt:["天通苑北地鐵站（5 號線）",40.0659,116.4118],jd:["軍都山滑雪場",40.2352,116.3229],gj:["簋街",39.944,116.427],hd:["胡大飯館（簋街總店）",39.9436,116.4264],tm:["天壇公園東門",39.882,116.4176],cq:["老磁器口豆汁店（天壇店）",39.8834,116.4105],sc:["什剎海冰場",39.937,116.38],yd:["銀錠橋",39.9373,116.385],jr:["聚德華天烤肉季（后海店）",39.938,116.3862],bg:["頤和園北宮門",39.999,116.275],dg:["頤和園東宮門",39.9984,116.2709],tl:["聽鸝館飯莊",39.9985,116.271],wd:["五道營胡同",39.9486,116.4115],mh:["METAL HANDS 鐵手咖啡（五道營店）",39.9485,116.4113],yj:["姚記炒肝（鼓樓店）",39.9405,116.3935],nl:["南鑼鼓巷",39.936,116.403],wy:["文宇奶酪店（南鑼鼓巷店）",39.9363,116.4026],
+bf:["便宜坊烤鴨（鮮魚口店）",39.894,116.3945],jf:["錦芳小吃（前門店）",39.8975,116.3915],dl:["東來順（前門店）",39.895,116.392],xd:["小大董（apm 店）",39.9095,116.4125],qf:["慶豐包子鋪（頤和園店）",39.9984,116.2715],tx:["天興居（鮮魚口店）",39.8938,116.3942],lc:["老誠一鍋羊蝎子（簋街店）",39.944,116.428],hj:["花家怡園（簋街店）",39.9442,116.4275]};
+const mk=k=>{const[n,a,b]=P[k];return`https://api.map.baidu.com/marker?location=${a},${b}&title=${E(n)}&content=${E(n)}&output=html`};
+const dr=(f,t)=>{const A=P[f],B=P[t];return`https://api.map.baidu.com/direction?origin=latlng:${A[1]},${A[2]}|name:${E(A[0])}&destination=latlng:${B[1]},${B[2]}|name:${E(B[0])}&mode=driving&output=html`};
+const IC={f:"✈️",c:"🚕",m:"🚇",w:"🚶",b:"🚌",k:"🚠",s:"🎿"},NM={f:"飛機",c:"打車",m:"地鐵",w:"步行",b:"巴士",k:"纜車",s:"滑雪"},CL={f:"b",c:"y",m:"b",w:"g",b:"g",k:"c",s:"b"};
+// 時間|行程|地點|交通|費用|標籤(B必去 Q搶票)|起點
+const D=[
+{d:"12/13（日）",t:"天安門・前門",s:"~12,000",tip:"⚠️ 12/6 約 17:00 搶國博票；航班延誤超 1hr 就放棄國博",r:`08:10–11:25|航班 CZ5010 香港→大興 PKX|a|f|機票已購||h
+11:25–12:45|抵達 PKX → 打車直達酒店（拖行李不搭地鐵）|h|c約 60 分鐘|¥150/車||a
+12:45–14:30|快速 check-in、放行李（⚠️國博不准帶大件行李）、酒店附近午餐|h|w|午餐 ¥50/人||
+14:45–15:10|步行往國博（廣場安檢 15–20 分鐘）|g|w10–15 分鐘|||h
+15:00–17:00|📍國博快閃：B1 古代中國精華（后母戊鼎／四羊方尊／三星堆）；16:00 停止入場|g|w館內約 2 小時|免費需預約|BQ|
+17:30–19:30|🍜晚餐：四季民福烤鴨＋大柵欄、正陽門夜景|sj|w15 分鐘|¥150/人||
+19:30–20:30|夜拍前門箭樓後散步返酒店|qm|w|免費||`},
+{d:"12/14（一）",t:"慕田峪長城",s:"~15,000",tip:"山上冷 3–5°C，防風外套＋暖寶寶貼手機",r:`07:00–07:30|早餐（酒店附近豆漿油條）|h|w|¥20/人||
+07:30–09:30|慕巴士直通車 前門發車|mt|b直通車約 1.5–2 小時|往返 ¥80–100|Q|qm
+09:30–15:00|慕田峪長城：纜車上 14 號敵樓→好漢坡 20 號→滑道下|mt|k纜車／滑道|門票 ¥45＋纜車滑道 ¥140|B|
+15:00–17:00|直通車返程補眠|qm|b約 2 小時|已含||mt
+18:00–19:30|晚餐：門框胡同百年滷煮＋北冰洋|mk|w前門商圈|¥40/人||
+19:30–21:00|足療按摩放鬆（長城日必安排）|qm|w前門商圈|¥100/人||`},
+{d:"12/15（二）",t:"故宮・景山・王府井",s:"~18,000",tip:"⚠️ 12/8 晚 20:00 搶故宮票！帶護照，午門進",r:`07:00–08:10|早餐後步行往故宮午門（⚠️一律午門進）|wm|w15–20 分鐘|||h
+08:30–13:00|故宮深度：中軸線＋東西六宮＋珍寶館（神武門出）|wm|w館內約 4.5 小時|門票 ¥60＋珍寶館 ¥10|BQ|
+13:00–14:30|神武門外午餐＋咖啡（河沿肉餅）|hy|w|¥50/人||sw
+14:30–16:00|景山公園萬春亭拍故宮全景|js|w5 分鐘|¥2||
+16:30–18:30|王府井大街 City Walk＋和平菓局|hp|c10 分鐘 ¥15|免費||
+18:30–20:00|晚餐：大董烤鴨（本行高檔日①）|dd|w|¥250/人||`},
+{d:"12/16（三）",t:"北京環球影城",s:"~16,000",tip:"開園先衝哈利波特；單人通道當快證用",r:`07:00–08:30|出發往環球影城|ug|m約 75 分鐘 ¥10/c45 分鐘 ¥70|||h
+08:30–09:00|安檢排隊入園（App 提前購票、刷身份證）|ug|w|淡季票約 ¥400||
+09:00–10:40|哈利波特禁忌之旅→鷹馬飛行→園區拍照（開園先衝，人最少）|ug|w入園右轉抄近路||B|
+10:40–12:00|侏羅紀世界大冒險→飛越侏羅紀|ug|w看 App 排隊時間調換|||
+12:00–13:00|錯峰午餐：三把掃帚|sb|w全天最空用餐時段|¥118/人||
+13:00–15:30|變形金剛火種源→霸天虎（單人通道）→功夫熊貓（全室內）|ug|w|||
+15:30–17:30|小黃人鬧翻天→二刷最愛→等哈利波特園區亮燈|ug|w|||
+17:30–18:30|城市大道晚餐後返程|h|m同去程/c同去程|¥80/人||ug`},
+{d:"12/17（四）",t:"軍都山・簋街",s:"~14,000",tip:"提前約教練；新手揀單板；防水手套必備",r:`07:30–08:00|早餐後出發往天通苑北|tt|m2→5 號線約 50 分鐘|¥5||h
+08:00–08:45|轉打車往軍都山滑雪場|jd|c30–40 分鐘|¥60–80||
+09:00–12:30|⛷️滑雪初體驗：換裝備→教練 3 小時（單板入門：犁式剎車）→自由練習|jd|s魔毯初級區|平日日場約 ¥200–260/人＋教練 1 對 2 約 ¥500–700/2hr|BQ|
+12:30–13:30|雪場餐廳午餐|jd|w|¥50/人||
+13:30–15:30|繼續自由練習／初級道|jd|s|已包在票內||
+15:30–16:00|還裝備、收拾|jd|w|||
+16:00–17:00|打車往東直門（簋街方向）|gj|c45–60 分鐘|¥100||jd
+17:15–19:30|📍簋街夜市：胡大麻辣小龍蝦（營業至凌晨 2–4 點）|hd|w東直門步行即達|¥120/人|B|
+19:30–20:00|食飽打車返酒店|h|c15 分鐘|¥25||hd`},
+{d:"12/18（五）",t:"天壇・什剎海",s:"~15,000",tip:"冰場通常 12 月下旬開放，未開放改恭王府",r:`08:00–08:40|出發往天壇|tm|m2→5 號線 25 分鐘|¥3||h
+08:40–12:00|天壇：祈年殿→回音壁→圓丘→齋宮（西門出）|tm|w約 3.5 小時|聯票 ¥35|B|
+12:00–13:30|午餐：老磁器口豆汁店（挑戰豆汁＋焦圈）|cq|w|¥20/人||
+14:00–15:30|回酒店午休（今晚后海重頭戲）|h|m30 分鐘|||cq
+15:30–16:00|出發往什剎海|sc|m2 號線積水潭站 30 分鐘|||h
+16:00–18:00|什剎海冰場滑冰＋銀錠橋夕陽（日落 16:51）|yd|w|冰場約 ¥60–80/人|B|sc
+18:00–20:30|煙袋斜街→后海酒吧街→烤肉季晚餐|jr|w約 2.5 公里|¥120/人||yd
+20:30–21:00|返程|h|m8→7/2 號線 30 分鐘|||jr`},
+{d:"12/19（六）",t:"頤和園・五道營",s:"~17,000",tip:"周六 9 點開門即入頤和園避人流",r:`08:00–09:00|周六早起出發往頤和園（9 點開門即入避人流）|bg|m2→4 號線北宮門站約 50 分鐘|¥5||h
+09:00–13:00|頤和園：蘇州街→佛香閣→長廊→石舫→十七孔橋（東宮門出）|dg|w約 4 小時|聯票 ¥60|B|bg
+13:00–14:00|午餐：聽鸝館宮廷菜／慶豐包子|tl|w|¥150（慶豐 ¥30）||dg
+14:30–16:30|五道營胡同 City Walk＋國子監街|wd|c30 分鐘 ¥45|免費||dg
+16:30–17:30|METAL HANDS 鐵手咖啡歇腳打卡|mh|w|¥45/杯||
+18:00–19:30|晚餐：姚記炒肝（鼓樓店）後搭 2 號線返程|yj|m2 號線 25 分鐘|¥30/人||mh`},
+{d:"12/20（日）",t:"南鑼鼓巷・返程",s:"~10,000",tip:"17:30 前抵 PKX；南鑼 9 點去最靚",r:`08:30–09:00|退房寄存行李|h|w|||
+09:00–11:30|南鑼鼓巷晨遊（9 點未醒的巷子最美）→帽兒胡同→鐘鼓樓外觀|nl|m8 號線 20 分鐘 ¥3|免費|B|h
+11:30–12:30|早午餐：文宇奶酪＋滷煮火燒|wy|w|¥40/人||
+12:30–13:30|回酒店取行李|h|m8 號線 20 分鐘|||wy
+14:00–16:00|前往 PKX（17:30 前抵達，國際航班預 2.5 小時）|a|c60 分鐘 ¥150/m80 分鐘 ¥40|||h
+19:00–23:00|✈️ CZ5009 大興→香港|a|f|||h`}];
+const F=`四季民福烤鴨（前門大柵欄店）|前門|烤鴨|酥香嫩烤鴨、貝勒烤肉|¥150|D1 晚餐，翻台快|sj
+便宜坊烤鴨（鮮魚口店）|前門|烤鴨|燜爐烤鴨|¥120|600 年老字號|bf
+錦芳小吃（前門店）|前門|小吃|奶油炸糕、艾窩窩|¥20|下午茶點心|jf
+門框胡同百年滷煮（前門店）|前門|小吃|滷煮火燒＋北冰洋|¥40|D2 晚餐煙火氣|mk
+東來順（前門店）|前門|涮肉|涮羊肉|¥130|長城日暖身之選|dl
+河沿肉餅|故宮／神武門|京菜|牛肉餡餅、宮保雞丁|¥50|D3 故宮出來午餐|hy
+大董烤鴨（王府井店）|王府井|高檔烤鴨|酥不膩烤鴨|¥250|D3 高檔日，建議訂位|dd
+小大董（apm 店）|王府井|烤鴨|烤鴨、藤椒魚|¥120|大董平替|xd
+三把掃帚（環球內）|環球影城|主題餐廳|烤雞排骨拼盤|¥118|D4 十二點錯峰用餐|sb
+聽鸝館（頤和園東宮門）|頤和園|宮廷菜|宮廷點心、豌豆黃|¥150|D7 皇家園林內|tl
+慶豐包子鋪（頤和園店）|頤和園|快餐|包子炒肝|¥30|快速平價|qf
+METAL HANDS 鐵手咖啡|五道營|咖啡|Dirty、澳白|¥45|D7 文青打卡|mh
+姚記炒肝（鼓樓店）|鼓樓|小吃|炒肝、包子|¥30|D7 晚餐在地人食堂|yj
+老磁器口豆汁店（天壇店）|天壇|小吃|豆汁＋焦圈|¥20|D6 勇士挑戰|cq
+聚德華天烤肉季（后海店）|什剎海|烤肉|炙子烤肉|¥120|D6 臨水老字號|jr
+天興居（鮮魚口店）|前門|小吃|炒肝、包子|¥30|老字號快餐|tx
+胡大飯館（簋街總店）|簋街|宵夜|麻辣小龍蝦|¥120|D5 晚餐，營業至凌晨 2–4 點|hd
+老誠一鍋羊蝎子（簋街店）|簋街|火鍋|羊蝎子火鍋|¥90|D5 替代，暖身之選|lc
+花家怡園（簋街店）|簋街|京菜|北京烤鴨、京味菜|¥100|D5 替代，環境佳|hj
+文宇奶酪（南鑼鼓巷店）|南鑼鼓巷|甜品|原味奶酪、雙皮奶|¥25|D8 早午餐甜品|wy`;
+const I=[["🎫 預約與票務",["國博：提前 7 天約 17:00「國家博物館」App／小程序（⚠️12/6 搶 12/13）；免費實名；周一閉館；16:00 停止入場；不可帶大件行李","故宮：提前 7 天 20:00「故宮博物院」小程序（⚠️12/8 搶 12/15）；帶護照；一律午門進","天壇／頤和園／景山：「暢遊公園」公眾號提前購票；淡季現場可買","環球影城：「北京環球度假區」App 購票，淡季約 ¥400；入園右轉先衝哈利波特；單人通道當快證","慕田峪直通車：「慕巴士」公眾號訂票，前門發車，往返 ¥80–100","軍都山滑雪：平日日場約 ¥200–260/人（包雪具）；教練 1 對 2 約 ¥500–700/2hr，提前在官方小程序預約；雪服雪鏡租 ¥50–100","⚠️ 廣場安檢：天安門廣場／國博需安檢排隊 15–20 分鐘，不帶打火機、自拍桿"]],
+["🚇 交通與航班",["🏨 酒店：懿庭臻舍酒店（北京天安門廣場店）","✈️ 去程：CZ5010 香港 08:10 → 大興 11:25","✈️ 回程：CZ5009 大興 19:00 → 香港 23:00","軍都山官方有地鐵站接駁班車，出發前一日查；新手揀雙板，著防水手套","🗺️ 定點／導航連結手機點開即喚起百度地圖 App；打車連結＝駕車路線，App 內切「打車」頁叫車；坐標為約略位置，以 App 內店名搜尋為準","🦞 簋街夜市：東直門內大街，北京最出名宵夜街；胡大小龍蝦、羊蝎子、烤魚；大部分店營業至凌晨 2–4 點","🧊 什剎海冰場：通常 12 月下旬開放（視氣溫），約 ¥60–80/人；未開放改恭王府（¥40）"]],
+["🌡️ 天氣與日落",["約 -8°C~3°C；羽絨服＋防風防水外套＋圍巾手套帽子＋防滑鞋","暖寶寶貼手機；室內暖氣乾燥帶潤膚品","🌅 12 月北京約 16:51 日落，戶外核心參觀排 15:30 前"]],
+["💰 支付與手信",["微信／支付寶綁香港信用卡即可，備少量現金","🛍️ 稻香村認準「三禾」標誌；故宮文創；烤鴨真空裝"]],
+["🌧️ 備案方案",["滑雪場惡劣天氣：雪場關閉／冇雪→改溫都水城溫泉（同方向昌平，¥150/人）或返市區前門；滑雪不可改期則與 D7 對調","長城惡劣天氣：纜車停運→改天壇＋首都博物館，長城與 D7 對調","冰場未開：改恭王府＋宋慶齡故居","霧霾沙塵：戶外改室內：故宮室內展廳＋國博＋首都博物館，備 N95"]]];
+const T=["12/6 17:00 搶國博票","12/8 20:00 搶故宮票","預約慕巴士","預約軍都山滑雪教練","換人民幣／綁支付寶","帶護照、防風外套、暖寶寶、防水手套"];
+const $=id=>document.getElementById(id);
+// 導覽
+const V=[["home","首頁"],["days","每日行程"],["food","美食"],["info","實用資訊"],["todo","待辦"]];
+$("nav").innerHTML=V.map(v=>`<button data-v="${v[0]}">${v[1]}</button>`).join("");
+function show(v){if(!V.some(x=>x[0]==v))v="home";V.forEach(x=>{$(x[0]).classList.toggle("on",x[0]==v)});document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.v==v));scrollTo(0,0)}
+$("nav").onclick=e=>{const v=e.target.dataset.v;if(v){location.hash=v;show(v)}};
+addEventListener("hashchange",()=>show(location.hash.slice(1)));
+// 首頁
+$("hotel").href=mk("h");
+const T0=new Date("2026-12-13T08:10:00+08:00");
+function tick(){const s=Math.floor((T0-Date.now())/1e3);const h=$("cd").previousElementSibling;if(s<=0){h.textContent="旅程已出發 🎉";$("cd").innerHTML="";return}
+const v=[[Math.floor(s/86400),"天","c"],[Math.floor(s%86400/3600),"時","y"],[Math.floor(s%3600/60),"分","b"],[s%60,"秒","g"]];
+$("cd").innerHTML=v.map(x=>`<div class="${x[2]}"><b>${String(x[0]).padStart(2,"0")}</b>${x[1]}</div>`).join("")}
+tick();setInterval(tick,1000);
+// 每日
+let cur=0;
+$("pills").innerHTML=D.map((x,i)=>`<button data-i="${i}">D${i+1}</button>`).join("");
+$("pills").onclick=e=>{const i=e.target.dataset.i;if(i!=null){cur=+i;day()}};
+function day(){const x=D[cur];document.querySelectorAll("#pills button").forEach((b,i)=>b.classList.toggle("on",i==cur));let prev="h";
+const cards=x.r.split("\n").map((l,i)=>{const[tm,tx,loc,tr,cost,tg,fr]=l.split("|");let f=fr||prev;if(f==loc)f="h";prev=loc;
+const tags=(tr||"").split("/").filter(Boolean).map(s=>`<span class="tag ${CL[s[0]]}">${IC[s[0]]} ${NM[s[0]]} ${s.slice(1)}</span>`).join("");
+const flag=(tg||"").includes("B")?'<span class="tag c">必去</span>':"";const q=(tg||"").includes("Q")?'<span class="tag y">⚠️ 搶票</span>':"";
+return`<div class="box card" style="animation-delay:${i*.04}s"><div class="tm">${tm} ${flag}${q}</div><div>${tx}</div><div class="pl">📍 ${P[loc][0]}</div><div>${tags}</div>${cost?`<div class="cost">${cost}</div>`:""}<div class="acts"><a class="btn" target="_blank" href="${mk(loc)}">📍 百度地圖定點</a><a class="btn t" target="_blank" href="${dr(f,loc)}">🚕 打車導航</a></div></div>`}).join("");
+$("dayv").innerHTML=`<div class="box dh card"><h2 style="margin:0">D${cur+1}　${x.d}</h2>${x.t}<small>👣 步數 ${x.s}</small></div><div class="tl">${cards}</div><div class="box tip card">💡 當日貼士：${x.tip}</div>`}
+day();
+// 美食
+$("foodv").innerHTML=F.split("\n").map(l=>{const[n,a,t,d,p,m,k]=l.split("|");return`<div class="box" style="margin:0"><h3>${n}</h3><div><span class="tag g">${a}</span><span class="tag b">${t}</span><span class="cost">人均 ${p}</span></div><div>⭐ ${d}</div><div class="pl">${m}</div><div class="acts"><a class="btn" target="_blank" href="${mk(k)}">📍 定點</a><a class="btn t" target="_blank" href="${dr("h",k)}">🚕 從酒店打車</a></div></div>`}).join("");
+// 資訊
+$("infov").innerHTML=I.map((g,i)=>`<details${i?"":" open"}><summary>${g[0]}</summary><ul>${g[1].map(s=>`<li>${s}</li>`).join("")}</ul></details>`).join("");
+// 待辦
+let S={};try{S=JSON.parse(localStorage.getItem("bj-todo")||"{}")}catch(e){}
+$("todov").innerHTML=T.map((t,i)=>`<label class="todo"><input type="checkbox" data-i="${i}"${S[i]?" checked":""}><span>${t}</span></label>`).join("");
+$("todov").onchange=e=>{S[e.target.dataset.i]=e.target.checked;try{localStorage.setItem("bj-todo",JSON.stringify(S))}catch(x){}};
+show(location.hash.slice(1));
+</script></body></html>
